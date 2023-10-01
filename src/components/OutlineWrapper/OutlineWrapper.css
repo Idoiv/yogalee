@@ -1,0 +1,30 @@
+.space-wrapper {
+  background-color: #f2f2f2;  /* Light grey background for space */
+  padding: 10px;  /* Padding for space */
+}
+
+.outline-wrapper {
+  background-color: #f2f2f2;  /* White background for each component */
+}
+
+.outline {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .space-wrapper {
+    background-color: #f2f2f2;  /* Light grey background for space */
+    padding: 10px;  /* Padding for space */
+  }
+  
+  .outline-wrapper {
+    background-color: #f2f2f2;  /* White background for each component */
+  }
+  
+  .outline {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+  }
+}

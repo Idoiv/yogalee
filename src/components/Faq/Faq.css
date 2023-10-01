@@ -1,0 +1,118 @@
+/* RTL Support */
+.rtl {
+  direction: rtl;
+}
+
+/* Your existing styles */
+.faq-container {
+  background-color: #547c8b;
+  padding: 20px;
+  border-radius: 0px;
+}
+
+.faq-title {
+  color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 3rem;  /* Increased font size */
+  text-align: center;  /* Centered text */
+  text-shadow: 2px 2px 4px #000000;  /* Text shadow for depth */
+  background: -webkit-linear-gradient(#eee, #333);  /* Gradient background */
+  -webkit-background-clip: text;
+  margin-bottom: 20px;
+  padding: 10px;  /* Added some padding */
+  border-radius: 8px;  /* Rounded corners */
+}
+/* FAQ Questions */
+.faq-question {
+  color: #f4f4f4;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px #000000;
+  margin-bottom: 10px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  border-left: 4px solid #000000;
+  border-radius: 4px;
+}
+
+/* FAQ Answers */
+.faq-answer {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.faq-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.faq-section {
+  flex: 2;
+  padding: 20px;
+}
+
+.intro-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.intro-image img {
+  max-width: 100%;
+  border: 5px solid white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+/* Existing Styles ... */
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Adjust the layout to be columnar, center-aligning all the items */
+  .faq-layout {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Give equal priority to both sections and reduce padding */
+  .faq-section,
+  .intro-image {
+    flex: 1;
+    padding: 10px;
+  }
+
+  /* Increase image width within container */
+  .intro-image img {
+    max-width: 90%;
+  }
+
+  /* Adjust title styles */
+  .faq-title {
+    font-size: 2rem;  /* Reduced font size */
+    margin-bottom: 15px;  /* Reduced margin */
+    padding: 5px;  /* Reduced padding */
+  }
+
+  /* Adjust question styles */
+  .faq-question {
+    font-size: 1.2rem;  /* Reduced font size */
+    margin-bottom: 8px;  /* Reduced margin */
+    padding: 4px;  /* Reduced padding */
+  }
+
+  /* Adjust answer styles */
+  .faq-answer {
+    font-size: 0.9rem;  /* Reduced font size */
+    line-height: 1.4;  /* Slightly reduced line height */
+    margin-bottom: 15px;  /* Reduced margin */
+    padding: 8px;  /* Reduced padding */
+  }
+}

@@ -1,0 +1,154 @@
+/* Existing styles */
+.contact-form-container {
+  padding: 20px;
+  border-radius: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: 0 auto;
+  align-content: space-around;
+  background-color: #2f2e2b;
+  text-align: left; /* Default for left-to-right languages */
+}
+
+.contact-container {
+  background-color: #337b93;
+  background-size: cover;
+  background: no-repeat center center fixed; 
+  color: white;
+  padding: 100px 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  max-height: 1000px;
+}
+
+h1 {
+  color: #f9f8f8;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.popup-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-button:hover {
+  background-color: #0056b3;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    max-width: 90%;  /* Changed to 90% for better screen usage */
+    padding: 10px;  /* Reduced padding */
+  }
+
+  .contact-container {
+    padding: 30px 5px;  /* Reduced padding */
+  }
+
+  h1 {
+    font-size: 18px;  /* Font size remains the same */
+    margin-bottom: 15px;  /* Reduced margin */
+  }
+
+  .form-group {
+    margin-bottom: 8px;  /* Reduced margin */
+    font-size: 16px;  /* Reduced font size */
+  }
+
+  .form-control {
+    padding: 8px;  /* Reduced padding */
+    font-size: 14px;  /* Reduced font size */
+  }
+
+  .btn-primary {
+    padding: 8px 12px;  /* Slightly reduced padding */
+    font-size: 14px;  /* Reduced font size */
+  }
+
+  .popup-content {
+    padding: 15px;  /* Padding remains the same */
+  }
+
+  .popup-button {
+    padding: 8px 12px;  /* Slightly reduced padding */
+    font-size: 14px;  /* Reduced font size */
+  }
+  
+  .error-text {
+    font-size: 11px;  /* Slightly reduced font size */
+  }
+}
+
+/* Additional styles for right-to-left languages */
+
+[dir="rtl"] .contact-form-container {
+  text-align: right; /* Right alignment for right-to-left languages */
+}
+.description-text {
+  font-size: 14px;  /* Adjust this value as needed */
+  margin-top: 5px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,67 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Component Styles */
+
+/* Outline Wrapper */
+.outline {
+  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2e2e2e;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 5px;
+  align-items: center;
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle-button {
+  position: fixed;
+  z-index: 1001;
+  left: 20px;
+  top: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  /* Body */
+  body {
+    padding: 0;  /* Removed padding */
+  }
+
+  /* Outline */
+  .outline {
+    margin: 5px;  /* Reduced margin */
+    padding: 10px;  /* Reduced padding */
+    border-radius: 5px;  /* Slightly rounded corners */
+  }
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;  /* Center items, since it's a column now */
+    padding: 5px;  /* Reduced padding */
+  }
+
+  /* Sidebar Toggle Button */
+  .sidebar-toggle-button {
+    left: 5px;  /* Moved closer to the edge */
+    top: 5px;  /* Moved closer to the top */
+    font-size: 16px;  /* Slightly reduced font size */
+  }
+}

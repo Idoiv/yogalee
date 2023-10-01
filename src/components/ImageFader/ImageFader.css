@@ -1,0 +1,26 @@
+.image-fader {
+  position: relative;
+  width: 500px;  /* Set to your desired width */
+  height: 300px;  /* Set to your desired height */
+  overflow: hidden;
+}
+
+.image-fader img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* Cover the whole area without distorting the aspect ratio */
+  transition: opacity 1s ease-in-out;
+}
+
+.image-fader img.hidden {
+  opacity: 0;
+  z-index: 0;
+}
+
+.image-fader img.visible {
+  opacity: 1;
+  z-index: 1;
+}

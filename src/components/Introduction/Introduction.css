@@ -1,0 +1,117 @@
+/* Original Styles */
+
+.intro-container {
+  background: no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  padding: 100px 0;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Intro Text Container */
+.intro-text {
+  flex: 1;
+  padding: 20px;
+  font-family: 'Rock Salt', cursive;
+  background: rgba(0, 0, 0, 0.6);  /* Semi-transparent background */
+  border-radius: 8px;  /* Rounded corners */
+}
+
+/* Intro Text */
+.intro-text h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #000;  /* Added text-shadow */
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: bold;  /* Made text bold */
+  text-shadow: 1px 1px 3px #000;  /* Added text-shadow */
+}
+
+.intro-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.intro-image img {
+  max-width: 60%;
+  border: 5px solid white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+/* Media Query for Mobile Responsiveness */
+
+/* Original Styles */
+/* ... (No changes here) */
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .intro-container {
+    padding: 20px 0;  /* Reduced padding */
+  }
+
+  .intro-content {
+    flex-direction: column;  /* Stack elements vertically */
+  }
+
+  .intro-text {
+    padding: 10px;  /* Reduced padding */
+    text-align: center;  /* Center align for better readability on small screens */
+  }
+
+  .intro-text h1 {
+    font-size: 2rem;  /* Reduced font size */
+    margin-bottom: 10px;  /* Reduced margin */
+  }
+
+  .intro-text p {
+    font-size: 1rem;  /* Reduced font size */
+    line-height: 1.4;  /* Reduced line height */
+  }
+
+  .intro-image {
+    padding: 10px;  /* Reduced padding */
+  }
+
+  .intro-image img {
+    max-width: 80%;  /* Increased to take up more space on small screens */
+  }
+
+  /* For Hebrew or right-to-left layout in mobile */
+  [dir="rtl"] .intro-text, [dir="ltr"] .intro-text {
+    text-align: center;  /* Center align text */
+  }
+
+  [dir="rtl"] .intro-content, [dir="ltr"] .intro-content {
+    flex-direction: column;  /* Stack elements vertically */
+  }
+}
+
+/* For English or left-to-right layout */
+.intro-text {
+  text-align: left;
+}
+
+.intro-content {
+  flex-direction: row;
+}
+
+/* For Hebrew or right-to-left layout */
+[dir="rtl"] .intro-text {
+  text-align: right;
+}
+
+[dir="rtl"] .intro-content {
+  flex-direction: row-reverse;
+}

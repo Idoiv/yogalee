@@ -1,0 +1,95 @@
+/* The main section containing skate-surfing content */
+.skate-surfing-section {
+  background-image: url('/public/yoga4.jpg'); /* Add your background image here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6); /* Fallback background color */
+  color: white;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skate-surfing-section h1,
+.skate-surfing-section p {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+  padding: 10px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #333;
+}
+
+/* Header styling */
+.skate-surfing-section h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+/* Paragraph styling */
+.skate-surfing-section p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+/* Button styling */
+.skate-surfing-section button {
+  background-color: #000000bc;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.skate-surfing-section button:hover {
+  background-color: #ff8f42;
+}
+
+/* Additional styles for right-to-left languages */
+[dir="rtl"] .skate-surfing-section {
+  text-align: right; /* Right alignment for right-to-left languages */
+}
+
+[dir="rtl"] .skate-surfing-section h1,
+[dir="rtl"] .skate-surfing-section p {
+  text-align: right;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .skate-surfing-section {
+    padding: 1rem;  /* Reduced fixed px to rem */
+    min-height: 50vh; /* Using viewport units */
+  }
+
+  .skate-surfing-section h1 {
+    font-size: 1.5rem; /* Reduced font size */
+    margin-bottom: 1rem; /* Using rem instead of fixed px */
+  }
+
+  .skate-surfing-section p {
+    font-size: 1rem; /* Reduced font size */
+    line-height: 1.4;
+    margin-bottom: 1rem; /* Using rem instead of fixed px */
+  }
+
+  .skate-surfing-section button {
+    padding: 0.5rem 1rem; /* Reduced padding and using rem */
+    font-size: 1rem; /* Reduced font size */
+  }
+}

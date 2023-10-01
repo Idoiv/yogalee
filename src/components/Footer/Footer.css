@@ -1,0 +1,22 @@
+.footer-container {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    bottom: -1;
+    width: 100%;
+  }
+  
+  .footer-link {
+    color: #fff;
+  }
+  @media (max-width: 768px) {
+    .footer-container {
+      padding: 0.5rem;
+      font-size: 0.8rem;
+    }
+    .footer-link {
+      font-size: 1.5rem;
+    }
+  }

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3adf12dc.css",
+    "main.js": "/static/js/main.9d9a83bf.js",
+    "static/js/787.196bc331.chunk.js": "/static/js/787.196bc331.chunk.js",
+    "static/media/epic-moments.jpg": "/static/media/epic-moments.8590f6062ba4406ed74a.jpg",
+    "static/media/yoga4.jpg": "/static/media/yoga4.cae69ab9725cc7fbf0e1.jpg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "index.html": "/index.html",
+    "main.3adf12dc.css.map": "/static/css/main.3adf12dc.css.map",
+    "main.9d9a83bf.js.map": "/static/js/main.9d9a83bf.js.map",
+    "787.196bc331.chunk.js.map": "/static/js/787.196bc331.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3adf12dc.css",
+    "static/js/main.9d9a83bf.js"
+  ]
+}
